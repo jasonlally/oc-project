@@ -1,0 +1,276 @@
+/*
+Theme Name:     SF MOCI Frank Child Theme
+Theme URI:      http://www.somerandomdude.com/work/frank/
+Description:    SF MOCI Child theme for the Frank theme
+Author:         Jake Levitas / Jason Lally
+Author URI:     http://innovatesf.com
+Template:       Frank
+Version:        0.1.0
+*/
+
+@import url("../Frank/style.css");
+@import url("buttons.css");
+
+@font-face {
+  font-family: 'Fjalla One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fjalla One'), local('FjallaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/fjallaone/v1/rxxXUYj4oZ6Q5oDJFtEd6r3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat-Regular'), url(http://themes.googleusercontent.com/static/fonts/montserrat/v3/zhcz-_WihjSQC0oHJ9TCYL3hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+/* COLOR PALETTE FOR REFERENCE */
+/* 
+ORANGE - #f16221
+BLUE - #3D85C6
+BODY BLACK - #050000
+
+*/
+
+/* SITE WIDE STYLING */
+.post-content {
+	font: 17px/1.6 "Lato", sans-serif
+}
+
+.one_third, .two_third, .one_half, .one_fourth, .two_fourth, .three_fourth, .one_fifth, .two_fifth, .three_fifth, .four_fifth {
+	padding-right: 30px;
+}
+
+.header-wrapper {
+	background-color: #FFFFFF;
+}
+
+.last_column {
+	padding: 0;
+}
+
+a {
+color: #3D85C6;
+}
+
+a:hover {
+color: #444;
+}
+
+h1 {
+font-family: "Montserrat";
+text-transform: uppercase;
+color: #f16221;
+}
+
+h1 a {
+color: #f16221;
+}
+
+.single .post-content h1 {
+	font-size: 24px;
+	margin-top: 15px;
+	margin-bottom: 0px;
+}
+
+.single .post-content h3 {
+	margin-top: 0px;
+}
+
+h2 {
+font-family: "Montserrat";
+text-transform: uppercase;
+text-weight: normal;
+color: #f16221;
+}
+
+h3 {
+font-family: "Lato";
+text-transform: none;
+text-weight: normal;
+color: #3D85C6;
+font-size: 22px;
+}
+
+h4 {
+font-family: "Montserrat";
+text-transform: uppercase;
+text-weight: normal;
+color: #f16221;
+}
+
+p {
+font-family: "Lato";
+}
+
+
+/* SITE HEADING */
+
+#site-description {
+font-family: "Montserrat";
+text-transform: uppercase;
+font-size: 19px;
+color: #aaa;
+}
+
+#site-title a {
+color: #000;
+}
+
+/* STYLE NAV BAR */
+.menu-item a {
+padding: 7px 30px 7px 10px;
+display: block;
+color: #050000;
+font: 400 14px Sans-Serif;
+font-family: "Montserrat";
+text-transform: uppercase;
+}
+
+#search-2 {
+float:left;
+}
+
+#site-nav {
+margin-bottom:0px;
+}
+
+.widget {
+
+}
+
+/* STYLE PROJECT PAGES */
+
+p.single-project {
+font-family: "Lato";
+}
+
+/* HIDE FOOTER BELOW POST SNIPPETS */
+.metadata.horizontal {
+display:none;
+}
+
+/* HIDE TITLE FOR MAIN STATIC PAGES */
+.page-id-7 .post-title,.page-id-11 .post-title,.page-id-13 .post-title,.page-id-15 .post-title,.page-id-20 .post-title {
+display:none;
+}
+
+/* STYLE WIDGETIZED AREAS */
+#Widgets_on_Pages_1 .post-content { 
+font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+
+h2.widgettitle {
+font-family: "Lato", Helvetica, Arial, sans-serif;
+color: #000;
+}
+
+.widgets_on_page ul {
+margin: 0px 0px;
+}
+
+.widgets_on_page a {
+font-family: "Lato", Helvetica, Arial, sans-serif;
+color: #f16221;
+}
+
+.widgets_on_page .post-date {
+display:block;
+font-family: "Montserrat", Helvetica, Arial, sans-serif;
+text-transform: uppercase;
+font-size: 12px;
+}
+
+/* IMAGES */
+.post-content img {
+margin-top:0px;
+}
+
+.circlethumb {
+border-radius: 60%; 
+-webkit-border-radius: 150px; 
+-moz-border-radius: 150px;
+margin-bottom:20px;
+}
+
+.headshot {
+text-align:center;
+}
+
+.bioblock {
+padding-left:3%;
+padding-right:2%;
+}
+
+.twopersonblock {
+margin-bottom:5%;
+}
+
+.twopersonblocklast {
+margin-bottom:0%;
+}
+
+/* PAGE DIVIDERS */
+
+.fulldivider {
+width:100%;
+height:2px;
+background: #f0eceb;
+overflow: hidden;
+margin-bottom:3%;
+margin-top:3%;
+}
+
+.divcentered {
+text-align:center;
+}
+
+.sectionhead {
+text-align:center;
+margin-top:5%;
+margin-bottom:5%;
+padding-top: 2%;
+padding-bottom: 2%;
+border-style: solid none;
+border-width: 1px;
+}
+
+/* BLOG PAGES */
+
+.post-group.oneup.large section p {
+font-style: normal;
+font-size: 18px;
+}
+
+/* PROJECTS */
+.button-project-link {
+	margin-top: 30px;
+	line-height: 65px;
+	height: 65px;
+	width: 100%;
+	font-size: 20px;
+}
+
+/* PRESS */
+.press-outlet-logo {
+	text-align: center;
+}
+
+.press-outlet-logo img {
+	max-width: 250px;
+	height: auto;
+}
+
+.press h3 {
+	margin: 0;
+}
+
+.press {
+	margin-bottom: 30px;
+}
