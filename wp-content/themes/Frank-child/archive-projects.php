@@ -8,10 +8,10 @@
 	<main id="content-primary" role="main">
 		<?php $i = 1; ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-		<?php if ($i == 1 || ($i > 3 && $i % 2 == 0)):?>
+		<?php if ($i == 1 || ($i > 3 && $i % 4 == 0)):?>
 		<div class="projects-row row <?php echo $i == 1 ? 'first-row' : 'other-row'?>">
 		<?php endif;?>
-		<div class="one_third col <?php if($i == 3) echo 'last_column'?>">
+		<div class="one_third col <?php if($i % 3 == 0) echo 'last_column'?>">
 			<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			<div class="project-block">		
 			<?php echo(types_render_field( "feature-image", array( "alt" => "Image representing project","proportional" => "true", "style" => "width: 100%" ) ));?>
