@@ -5,8 +5,10 @@
 ?>
 <?php get_header(); ?>
 <div id="content" class="page fullspread">
-	<div class="row">
+	
+	<div class="row project-index">
 	<main id="content-primary" role="main">
+
 		<?php $i = 1; ?>
 		<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 		<?php if ($i == 1 || ($i > 3 && $i % 2 == 0)):?>
