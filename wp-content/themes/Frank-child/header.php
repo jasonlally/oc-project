@@ -33,15 +33,6 @@
 	<![endif]-->
 <div class="container">
 	<header id="page-header" class="row">
-		<div style="float:left; margin-right: 20px;">
-			<a href="/">
-			<img src="http://new.innovatesf.com/wp-content/uploads/2013/09/CitySeal_black_80h.png">
-			</a>
-		</div>
-		<hgroup id="site-title-description">
-			<h1 id="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</hgroup>
 
 		<?php
 			$header_image = get_header_image();
@@ -82,4 +73,9 @@
 			<?php endif; ?>
 		</div>
 		<?php endif; ?>
+
+		<!-- <hgroup id="site-title-description">
+			<h1 id="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo( 'name' ); ?></a></h1>
+			<h2 id="site-description"><?php bloginfo( 'description' ); ?></h2>
+		</hgroup> -->
 	</header>
