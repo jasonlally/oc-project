@@ -18,7 +18,7 @@
                 
                 	
                 <div class="row">
-			    <div class="four_fifth">
+			    <div class="two_third">
 			    	<header class="post-header">
                 	<h1><?php the_title(); ?></h1>
                 	<h3>
@@ -46,7 +46,7 @@
 					
 					<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
 						<div class='row press'>
-						<div class="two_third">
+						<div class="two_third" id="project-container">
 						<h3><?php echo(types_render_field("clipping-url", array("title"=> get_the_title(), "target" => "_blank")))?></h3>
 						<span class="publish-date"><?php echo(types_render_field("publish-date", array()));?></span>
 						<?php the_content()?>
@@ -73,9 +73,9 @@
 					
 					endif;
 					?>
-				</div><!--/four-fifth column-->
-				<div class="one_fifth last_column">
-					<?php echo(types_render_field("project-url", array("class" => "projectbutton1", "title" => "Visit Website", "target" => "_blank")));?>
+				</div><!--/two_third column-->
+				<div class="one_third last_column" id="sidebar">
+					<?php echo(types_render_field("project-url", array("class" => "projectbutton1", "title" => "Build In Your City", "target" => "_blank")));?>
 						<?php if(types_render_field("launch-date", array()) !== ""):?>
 						<h3 class="info-title">Launched</h3>
 						<p><?php
@@ -95,7 +95,7 @@
                      ?></p>
                      <?php endif; ?>
 					
-				</div><!--/one-fifth column-->
+				</div><!--/one-third column-->
 				<div class="clear_column"></div>
 				</div>	
 				</section>

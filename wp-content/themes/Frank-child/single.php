@@ -10,9 +10,7 @@
 			<?php while ( have_posts() ) : ?>
 			<?php the_post(); ?>
 			<article itemscope itemtype="http://schema.org/BlogPosting" class="post leftaside">
-				<header class="post-header">
-					<h1 class="post-title"><?php the_title(); ?></h1>
-				</header>
+				
 				<?php if ( $post->post_excerpt ) : ?>
 					<div id='excerpt'><?php the_excerpt(); ?></div>
 				<?php endif; ?>
